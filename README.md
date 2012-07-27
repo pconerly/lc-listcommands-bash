@@ -3,6 +3,12 @@ lc-listcommands-bash
 
 A bash script for providing a "list commands previously used in this directory" command.
 
+### The Problem and Solution
+
+I can never remember the exact commands I need to run whenever I'm in certain directories.  Things like `virtualenv/bin/activate`, `apache/bin/restart`, `./manage.py runserver`, `git clone git@github.com:obscure-git-repository.git` and hundreds of other miscellaneous commands that I do during development and sysadmining.  I could look in my bash\_history, but it would list all commands and not filter it by my current directory.
+
+I routintely type '`ls`' when I enter directories, and I wished I could do something like '`lc`' for "list commands I've used in this directory".  Finally, at the Seattle beer&&code meetup, a small script was born.
+
 ### Usage
 
 **Do some commands:**
@@ -61,4 +67,3 @@ Usage would be: `[Shift]` (or another meta key) `+ [Up]` to cycle to the most re
 3. Make listcommands.sh's `PROMPT_COMMAND` play nice with other custom `PROMPT_COMMAND`.
 
 4. Add a 10k line limit to `~/.lc_history file`
-
