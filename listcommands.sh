@@ -11,6 +11,6 @@ echo "$hpwd" >> ~/.lc_history;'
 function lc() {
 	echo List commands run in $PWD
 	rm ~/.lc_tmp
-	grep $PWD ~/.lc_history | while read line; do echo ${line#* }; done >> ~/.lc_tmp
+	grep $PWD" " ~/.lc_history | while read line; do echo ${line#* }; done >> ~/.lc_tmp
 	awk ' !x[$0]++' ~/.lc_tmp
 }
