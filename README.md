@@ -60,5 +60,5 @@ Usage would be: `[Shift]` (or another meta key) `+ [Up]` to cycle to the most re
 
 3. Make listcommands.sh's `PROMPT_COMMAND` play nice with other custom `PROMPT_COMMAND`.
 
-
+4. Add a 10k line limit to `~/.lc_history file`
 
